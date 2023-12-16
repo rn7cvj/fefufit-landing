@@ -35,6 +35,12 @@ defineProps(
   overflow-x: hidden;
   overflow-y: scroll;
 
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+  "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+  "Source Han Sans CN", sans-serif;
+
+
 
   height: 100vh;
 }

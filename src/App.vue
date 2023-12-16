@@ -15,15 +15,18 @@ import ImageCarousel from "./components/ImageCarousel.vue";
 
     <div style="width: 10%; height: 100vh"/>
     <MainButton
-      subtitle="Самое время заняться спортом"
+      subtitle-first-line="cамое время"
+      subtitle-second-line="заняться спортом"
       download-button-title="Скачать Android-приложение"
       web-version-button-title="Использовать веб-версию"
     />
 
     <div style="width: 10%; height: 100vh"/>
 
-    <ImageCarousel :images="['/app_mock_1.png' , '/app_mock_2.png' ]"/>
-    <ImageCarousel :images="['/app_mock_3.png' , '/app_mock_4.png' ]"/>
+    <ImageCarousel :top-padding=20 :images="['/app_mock_1.jpeg' , '/app_mock_2.jpeg' ]"/>
+
+    <div style="width: 5%; height: 100vh"/>
+    <ImageCarousel :images="['/app_mock_3.jpeg' , '/app_mock_4.jpeg' ]"/>
 
   </div>
 

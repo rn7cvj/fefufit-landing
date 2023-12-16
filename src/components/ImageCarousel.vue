@@ -3,6 +3,7 @@
 import Image from 'primevue/image';
 
 defineProps({
+  topPadding: Number,
   images: Array<string>,
 });
 
@@ -12,8 +13,9 @@ defineProps({
 
   <div class="main-container">
 
-    <Image src=images[0] alt="Image" width="250"/>
-    <Image src=images[1] alt="Image" width="250"/>
+    <div v-for="image in images" class="image">
+     <Image  :src=image alt="Image" width="250"  />
+    </div>
 
   </div>
 
@@ -21,9 +23,38 @@ defineProps({
 
 <style scoped>
 
+.image{
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+
+  overflow: clip;
+  border-radius: 27px;
+
+}
+
+
 .main-container {
+
+
+  width: 250px;
+  height: 100vh;
+
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+
+
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+
+  justify-items: center;
+
+}
+
+.main-container::-webkit-scrollbar {
+  display: none;
 }
 
 </style>
