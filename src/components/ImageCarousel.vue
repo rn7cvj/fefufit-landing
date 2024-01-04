@@ -3,7 +3,6 @@
 import Image from 'primevue/image';
 
 defineProps({
-  topPadding: Number,
   images: Array<string>,
 });
 

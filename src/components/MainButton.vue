@@ -20,10 +20,10 @@ defineProps({
     <img  alt="" src="/logo.svg" class="logo"/>
 
     <div style="height: 90px"/>
-    <a href="#" class="download-button">{{downloadButtonTitle}}</a>
+    <a href="https://fefufit.ru/api2/?apk_name=user_apk" class="download-button">{{downloadButtonTitle}}</a>
 
     <div style="height: 30px"/>
-    <a href="#" class="web-version-button">{{webVersionButtonTitle}}</a>
+    <a href="https://fefufit.ru/web/" class="web-version-button">{{webVersionButtonTitle}}</a>
   </div>
 
 </template>
