@@ -4,6 +4,23 @@ import Features from "./components/Features.vue";
 import MainButton from "./components/MainButton.vue";
 import ImageCarousel from "./components/ImageCarousel.vue";
 
+
+const publicPath : string = import.meta.env.VITE_BASE_URL
+
+console.log(`VITE_BASE_URL ${publicPath}`)
+
+
+let appMocks = [
+    publicPath + `app_mock_1.jpeg`  ,
+    publicPath + `app_mock_2.jpeg`  ,
+    publicPath + `app_mock_3.jpeg`  ,
+    publicPath + `app_mock_4.jpeg`  ,
+  ];
+
+let logoPath = publicPath + "logo.svg";
+
+
+
 </script>
 
 <template>
@@ -21,17 +38,18 @@ import ImageCarousel from "./components/ImageCarousel.vue";
       subtitle-second-line="заняться спортом"
       download-button-title="Скачать Android-приложение"
       web-version-button-title="Использовать веб-версию"
+      :logo-path=logoPath
     />
 
 
     <ImageCarousel
       class="image-carousel-primary"
-      :images="['/app_mock_1.jpeg' , '/app_mock_2.jpeg' ]"
+      :images= appMocks.slice(0,2)
     />
 
     <ImageCarousel
       class="image-carousel-secondary"
-      :images="['/app_mock_3.jpeg' , '/app_mock_4.jpeg' ]"
+      :images=appMocks.slice(2,4)
     />
 
   </div>
@@ -44,6 +62,8 @@ import ImageCarousel from "./components/ImageCarousel.vue";
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+
+  height: 100dvh;
 }
 
 @media screen and (max-width: 1100px){

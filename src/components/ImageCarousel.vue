@@ -48,7 +48,8 @@ defineProps({
   flex-direction: column;
   flex-wrap: wrap;
 
-  justify-items: center;
+  justify-items: start;
+
 
 }
 

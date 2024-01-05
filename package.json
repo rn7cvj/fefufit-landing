@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "legacy": "^0.0.3",
     "primevue": "^3.44.0",
     "vue": "^3.3.11"
   },
@@ -16,6 +17,8 @@
     "@vitejs/plugin-vue": "^4.5.2",
     "typescript": "^5.2.2",
     "vite": "^5.0.8",
-    "vue-tsc": "^1.8.25"
+    "vite-plugin-singlefile": "^0.13.5",
+    "vue-tsc": "^1.8.25",
+    "@vue/compiler-sfc": "^3.2.6"
   }
 }

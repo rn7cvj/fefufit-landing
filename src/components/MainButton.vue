@@ -1,11 +1,17 @@
 <script setup lang="ts">
 
+
+
+
 defineProps({
   subtitleFirstLine : String,
   subtitleSecondLine : String,
   downloadButtonTitle : String ,
   webVersionButtonTitle : String,
+  logoPath : String ,
 });
+
+
 
 </script>
 
@@ -17,7 +23,7 @@ defineProps({
     <div class="subtitle second-line">{{subtitleSecondLine}}</div>
 
     <div style="height: 30px"/>
-    <img  alt="" src="/logo.svg" class="logo"/>
+    <img alt="" :src=logoPath class="logo"/>
 
     <div style="height: 90px"/>
     <a href="https://fefufit.ru/api2/?apk_name=user_apk" class="download-button">{{downloadButtonTitle}}</a>
@@ -43,7 +49,7 @@ defineProps({
   "Source Han Sans CN", sans-serif;
 
 
-  height: 100vh;
+  height: 100dvh;
   width: 330px;
 
   display: flex;
