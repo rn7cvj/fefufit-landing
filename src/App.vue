@@ -7,7 +7,7 @@ import ImageCarousel from "./components/ImageCarousel.vue";
 
 const publicPath : string = import.meta.env.VITE_BASE_URL
 
-console.log(`VITE_BASE_URL ${publicPath}`)
+console.log(`VITE_BASE_URL: ${publicPath}`)
 
 
 let appMocks = [
@@ -20,24 +20,20 @@ let appMocks = [
 let logoPath = publicPath + "logo.svg";
 
 
-
 </script>
 
 <template>
+
 
   <div class="main-container">
 
 
     <Features
         class = "features"
-        :features='["информация о тренерах, корпусах и услугах" ,"информация о тренерах, корпусах и услугах" , "запись на занятия" , "покупка абонементов"]'/>
+        :features='[$t("feature.info"),$t("feature.booking") , $t("feature.purchase")]'/>
 
     <MainButton
       class = "main-button"
-      subtitle-first-line="cамое время"
-      subtitle-second-line="заняться спортом"
-      download-button-title="Скачать Android-приложение"
-      web-version-button-title="Использовать веб-версию"
       :logo-path=logoPath
     />
 

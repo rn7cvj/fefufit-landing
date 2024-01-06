@@ -4,10 +4,6 @@
 
 
 defineProps({
-  subtitleFirstLine : String,
-  subtitleSecondLine : String,
-  downloadButtonTitle : String ,
-  webVersionButtonTitle : String,
   logoPath : String ,
 });
 
@@ -19,17 +15,17 @@ defineProps({
 
   <div  class="main-button-container">
 
-    <div class="subtitle first-line">{{subtitleFirstLine}}</div>
-    <div class="subtitle second-line">{{subtitleSecondLine}}</div>
+    <div class="subtitle first-line">{{$t("title.first")}}</div>
+    <div class="subtitle second-line">{{$t("title.second")}}</div>
 
     <div style="height: 30px"/>
     <img alt="" :src=logoPath class="logo"/>
 
     <div style="height: 90px"/>
-    <a href="https://fefufit.ru/api2/?apk_name=user_apk" class="download-button">{{downloadButtonTitle}}</a>
+    <a href="https://fefufit.ru/api2/?apk_name=user_apk" class="download-button">{{$t("button.download")}}</a>
 
     <div style="height: 30px"/>
-    <a href="https://fefufit.ru/web/" class="web-version-button">{{webVersionButtonTitle}}</a>
+    <a href="https://fefufit.ru/web/" class="web-version-button">{{$t("button.useWeb")}}</a>
   </div>
 
 </template>

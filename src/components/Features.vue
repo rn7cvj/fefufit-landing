@@ -51,11 +51,17 @@ defineProps(
 
 
 .features-item{
+
   transform: rotate(180deg);
   writing-mode: vertical-lr;
+
   font-size: 24px;
   font-weight: 200;
+
   color: #FFFFFF;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 

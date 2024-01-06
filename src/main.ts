@@ -3,26 +3,44 @@ import  { createI18n } from 'vue-i18n'
 import App from './App.vue'
 import './style.css'
 
-const messages = {
+const strings = {
     en: {
-        message: {
-            hello: 'hello world'
+        feature: {
+            info : 'information about trainers, campuses, and services',
+            booking : 'booking for workout',
+            purchase : 'purchase subscriptions',
+        },
+        title : {
+            first : 'it\'s time',
+            second: 'to engage in sports',
+        },
+        button : {
+            download : 'Download Android app',
+            useWeb : 'Use web version',
         }
     },
     ru: {
-        message: {
-            hello: 'привет мир'
+        feature: {
+            info : 'информация о тренерах, корпусах и услугах',
+            booking : 'запись на занятия',
+            purchase : 'покупка абонементов',
+        },
+        title : {
+            first : 'самое время',
+            second: 'заняться спортом',
+        },
+        button : {
+            download : 'Скачать Android-приложение',
+            useWeb : 'Использовать веб-версию',
         }
     }
 }
 
-
-
 const i18n = createI18n({
 
-    locale: "en",
+    locale:  navigator.language,
     fallbackLocale: "en",
-    messages
+    messages: strings
 
 })
 
