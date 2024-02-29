@@ -22,7 +22,7 @@ defineProps({
     <img alt="" :src=logoPath class="logo"/>
 
     <div style="height: 90px"/>
-    <a href="https://fefufit.ru/api2/?apk_name=user_apk" class="download-button">{{$t("button.download")}}</a>
+    <a href="https://apps.rustore.ru/app/ru.fefufit" class="download-button">{{$t("button.download")}}</a>
 
     <div style="height: 30px"/>
     <a href="https://fefufit.ru/web/" class="web-version-button">{{$t("button.useWeb")}}</a>
